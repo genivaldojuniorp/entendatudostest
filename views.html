@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Views - @entendatudos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fundo preto */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Estilo do cabeçalho */
+        .header {
+            background-color: #222; /* Cor mais escura e suave */
+            color: #ffcc00; /* Cor destaque para texto */
+            padding: 40px 0; /* Maior espaçamento para aparência clean */
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para destacar */
+        }
+
+        .header h1 {
+            font-size: 36px; /* Tamanho de fonte maior */
+            font-weight: 400; /* Peso da fonte mais leve para sensação clean */
+            margin: 0;
+            letter-spacing: 1px; /* Espaçamento entre letras */
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .metrics-panel {
+            display: flex;
+            flex-wrap: wrap; /* Para permitir que os elementos se ajustem em múltiplas linhas */
+            justify-content: space-around;
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .metric {
+            flex: 1; /* Flexível para ajustar ao espaço disponível */
+            min-width: 250px; /* Largura mínima para manter o design */
+            max-width: 300px; /* Limite máximo de largura */
+            background-color: #222;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .metric h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+            color: #ffcc00;
+        }
+
+        .metric span {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        /* Estilos dos gráficos */
+        .graph {
+            width: 100%;
+            height: 150px;
+            background-color: #333;
+            margin-top: 15px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .graph-bar {
+            position: absolute;
+            bottom: 0;
+            background-color: #ffcc00;
+            width: 12%;
+            transition: height 0.5s ease;
+        }
+
+        .graph-bar:hover {
+            background-color: #ffdd55;
+        }
+
+        .graph-bar:nth-child(1) { left: 5%; height: 50%; }
+        .graph-bar:nth-child(2) { left: 20%; height: 80%; }
+        .graph-bar:nth-child(3) { left: 35%; height: 60%; }
+        .graph-bar:nth-child(4) { left: 50%; height: 90%; }
+        .graph-bar:nth-child(5) { left: 65%; height: 70%; }
+        .graph-bar:nth-child(6) { left: 80%; height: 85%; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Views @entendatudos</h1>
+    </div>
+
+    <div class="container">
+        <div class="metrics-panel">
+            <!-- Views Metric -->
+            <div class="metric">
+                <h2>Views</h2>
+                <span>12,7 milhões</span>
+                <div class="graph">
+                    <div class="graph-bar" style="height: 50%;"></div>
+                    <div class="graph-bar" style="height: 80%;"></div>
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 85%;"></div>
+                </div>
+            </div>
+
+            <!-- Interações Metric -->
+            <div class="metric">
+                <h2>Interações</h2>
+                <span>140 mil</span>
+                <div class="graph">
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 50%;"></div>
+                    <div class="graph-bar" style="height: 85%;"></div>
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                    <div class="graph-bar" style="height: 80%;"></div>
+                </div>
+            </div>
+
+            <!-- Likes Metric -->
+            <div class="metric">
+                <h2>Likes</h2>
+                <span>129 mil</span>
+                <div class="graph">
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 50%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                    <div class="graph-bar" style="height: 85%;"></div>
+                    <div class="graph-bar" style="height: 80%;"></div>
+                </div>
+            </div>
+
+            <!-- Comentários Metric -->
+            <div class="metric">
+                <h2>Comentários</h2>
+                <span>7.329 mil</span>
+                <div class="graph">
+                    <div class="graph-bar" style="height: 50%;"></div>
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 75%;"></div>
+                    <div class="graph-bar" style="height: 85%;"></div>
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                </div>
+            </div>
+
+            <!-- Seguidores Metric -->
+            <div class="metric">
+                <h2>Seguidores</h2>
+                <span>4.511 mil</span>
+                <div class="graph">
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 75%;"></div>
+                    <div class="graph-bar" style="height: 85%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 95%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
