@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@entendatudos</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000; /* Fundo preto */
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        /* Efeito de flutuar na imagem */
+        .profile-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            animation: float 3s ease-in-out infinite;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        /* Efeito ao passar o mouse */
+        .profile-photo:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animação de flutuar */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .buttons {
+            margin-top: 40px;
+        }
+
+        /* Estilo dos botões */
+        .button {
+            display: block;
+            background-color: #333;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 20px auto;
+            width: 200px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+    
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://thumbs2.imgbox.com/6f/95/TzE5wXXN_t.jpg" alt="Foto de perfil" class="profile-photo">
+        
+        <div class="buttons">
+            <a href="https://www.threads.net/@entendatudos" class="button" target="_blank">Threads</a>
+            <a href="https://www.instagram.com/entendatudos" class="button" target="_blank">Instagram</a>
+            <a href="mailto:entendatudos@aol.com" class="button">Contato</a>
+            <a href="views.html" class="button">Views</a>
+        </div>
+    </div>
+
+</body>
+</html>
